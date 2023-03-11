@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Water sound Meditation", filePath: "songs/1.mp3", coverPath: "covers/one.jpg"},
-    {songName: "Inner Peace Relaxation", filePath: "songs/2.mp3", coverPath: "covers/two.jpg"},
-    {songName: "Relax mind body Chakra [water]", filePath: "songs/3.mp3", coverPath: "covers/three.jpg"},
-    {songName: "BRAIN HEALING SOUNDS", filePath: "songs/4.mp3", coverPath: "covers/four.jpg"},
-    {songName: "OM meditation", filePath: "songs/5.mp3", coverPath: "covers/nine.jpg"},
-    {songName: "Relaxing Nature Sounds", filePath: "songs/6.mp3", coverPath: "covers/five.jpg"},
-    {songName: "Entspannungsmusik (relaxation)", filePath: "songs/7.mp3", coverPath: "covers/six.jpg"},
-    {songName: "Meditation Breath - Music", filePath: "songs/8.mp3", coverPath: "covers/seven.jpg"},
-    {songName: "RIOPY", filePath: "songs/9.mp3", coverPath: "covers/ten.jpg"},
-    {songName: "Magic Meditation Music For Deep Sleep", filePath: "songs/10.mp3", coverPath: "covers/eight.jpg"},
+    {songName: "Water sound Meditation", filePath: "songs/1.mp3", coverPath: "covers/oneee.jpg"},
+    {songName: "Inner Peace Relaxation", filePath: "songs/2.mp3", coverPath: "covers/twooo.jpg"},
+    {songName: "Relax mind body Chakra [water]", filePath: "songs/3.mp3", coverPath: "covers/threeee.jpg"},
+    {songName: "BRAIN HEALING SOUNDS", filePath: "songs/4.mp3", coverPath: "covers/fourrr.jpg"},
+    {songName: "OM meditation", filePath: "songs/5.mp3", coverPath: "covers/fiveee.jpg"},
+    {songName: "Relaxing Nature Sounds", filePath: "songs/6.mp3", coverPath: "covers/sixxx.jpg"},
+    {songName: "Entspannungsmusik (relaxation)", filePath: "songs/7.mp3", coverPath: "covers/sevennn.jpg"},
+    {songName: "Meditation Breath - Music", filePath: "songs/8.mp3", coverPath: "covers/eighttt.jpg"},
+    {songName: "RIOPY", filePath: "songs/9.mp3", coverPath: "covers/nineee.jpg"},
+    {songName: "Magic Meditation Music For Deep Sleep", filePath: "songs/10.mp3", coverPath: "covers/tennn.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
