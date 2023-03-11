@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: " Allah Kare  Sunil Mattu  Trendz Music", filePath: "songs/hindi1.mp3", coverPath: "covers/one.jpg"},
-    {songName: " Aankhon Se Batana ", filePath: "songs/hindi2.mp3", coverPath: "covers/two.jpg"},
-    {songName: "SunSonio Studio ", filePath: "songs/hindi3.mp3", coverPath: "covers/three.jpg"},
-    {songName: "Mera Din Bhi Tu", filePath: "songs/hindi4.mp3", coverPath: "covers/four.jpg"},
-    {songName: "2018s 50 HIT BOLLYWOOD SONGS", filePath: "songs/hindi5.mp3", coverPath: "covers/nine.jpg"},
-    {songName: " FEEL THE LOVE  MASHUP", filePath: "songs/hindi6.mp3", coverPath: "covers/five.jpg"},
-    {songName: "This 5 Min Makes Your Day ", filePath: "songs/hindi7.mp3", coverPath: "covers/six.jpg"},
-    {songName: "O Saathi", filePath: "songs/hindi8.mp3", coverPath: "covers/seven.jpg"},
-    {songName: " Ik Supna Full Audio Song", filePath: "songs/9.mp3", coverPath: "covers/hindi9.jpg"},
-    {songName: "Tarsati Hai Nigahen", filePath: "songs/hindi10.mp3", coverPath: "covers/eight.jpg"},
+    {songName: " Allah Kare  Sunil Mattu  Trendz Music", filePath: "songs/hindi1.mp3", coverPath: "covers/onee.jpg"},
+    {songName: " Aankhon Se Batana ", filePath: "songs/hindi2.mp3", coverPath: "covers/twoo.jpg"},
+    {songName: "SunSonio Studio ", filePath: "songs/hindi3.mp3", coverPath: "covers/threee.jpg"},
+    {songName: "Mera Din Bhi Tu", filePath: "songs/hindi4.mp3", coverPath: "covers/fourr.jpg"},
+    {songName: "2018s 50 HIT BOLLYWOOD SONGS", filePath: "songs/hindi5.mp3", coverPath: "covers/fivee.jpg"},
+    {songName: " FEEL THE LOVE  MASHUP", filePath: "songs/hindi6.mp3", coverPath: "covers/sixx.jpg"},
+    {songName: "This 5 Min Makes Your Day ", filePath: "songs/hindi7.mp3", coverPath: "covers/sevenn.jpg"},
+    {songName: "O Saathi", filePath: "songs/hindi8.mp3", coverPath: "covers/eightt.jpg"},
+    {songName: " Ik Supna Full Audio Song", filePath: "songs/9.mp3", coverPath: "covers/ninee.jpg"},
+    {songName: "Tarsati Hai Nigahen", filePath: "songs/hindi10.mp3", coverPath: "covers/tenn.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
