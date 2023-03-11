@@ -10,7 +10,7 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: " Allah Kare  Sunil Mattu  Trendz Music", filePath: "songs/hindi1.mp3", coverPath: "covers/onee.jpg"},
+    {songName: " Trendz Music", filePath: "songs/hindi1.mp3", coverPath: "covers/onee.jpg"},
     {songName: " Aankhon Se Batana ", filePath: "songs/hindi2.mp3", coverPath: "covers/twoo.jpg"},
     {songName: "SunSonio Studio ", filePath: "songs/hindi3.mp3", coverPath: "covers/threee.jpg"},
     {songName: "Mera Din Bhi Tu", filePath: "songs/hindi4.mp3", coverPath: "covers/fourr.jpg"},
