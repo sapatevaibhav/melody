@@ -50,6 +50,7 @@ nav ul li {
     border-radius: 12px;
     padding: 34px;
     background-image: url('bg.jpg');
+    
 }
 
 .bottom {
@@ -149,4 +150,6 @@ nav ul li {
     color: #F6931C;
 }
 
-
+.text{
+    color: black;
+}
