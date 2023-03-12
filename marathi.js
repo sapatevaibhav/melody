@@ -2,7 +2,7 @@
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio('songs/1.mp3');
+let audioElement = new Audio('songs/marathi/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Dhaga Dhaga Song ", filePath: "songs/marathi1.mp3", coverPath: "covers/oneee.jpg"},
-    {songName: "Tu Havishi song ", filePath: "songs/marathi2.mp3", coverPath: "covers/twooo.jpg"},
-    {songName: "Ka Kalena Song ", filePath: "songs/marathi3.mp3", coverPath: "covers/threeee.jpg"},
-    {songName: "Tola Tola  Romantic Song", filePath: "songs/marathi4.mp3", coverPath: "covers/fourrr.jpg"},
-    {songName: "Kitida Navyane", filePath: "songs/marathi5.mp3", coverPath: "covers/fiveee.jpg"},
-    {songName: " Swarg Ha Nava Song ", filePath: "songs/marathi6.mp3", coverPath: "covers/sixxx.jpg"},
-    {songName: "Adhir Man full song", filePath: "songs/marathi7.mp3", coverPath: "covers/sevennn.jpg"},
-    {songName: " Nako chandra tare fulanche pasare ", filePath: "songs/marathi8.mp3", coverPath: "covers/eighttt.jpg"},
-    {songName: "Jagana He Nyara Jhala Ji ", filePath: "songs/marathi9.mp3", coverPath: "covers/nineee.jpg"},
-    {songName: " Shivba Raja  Sher Shivraj", filePath: "songs/marathi10.mp3", coverPath: "covers/tennn.jpg"},
+    {songName: "Dhaga Dhaga Song ", filePath: "songs/marathi/1.mp3", coverPath: "covers/oneee.jpg"},
+    {songName: "Tu Havishi song ", filePath: "songs/marathi/2.mp3", coverPath: "covers/twooo.jpg"},
+    {songName: "Ka Kalena Song ", filePath: "songs/marathi/3.mp3", coverPath: "covers/threeee.jpg"},
+    {songName: "Tola Tola  Romantic Song", filePath: "songs/marathi/4.mp3", coverPath: "covers/fourrr.jpg"},
+    {songName: "Kitida Navyane", filePath: "songs/marathi/5.mp3", coverPath: "covers/fiveee.jpg"},
+    {songName: " Swarg Ha Nava Song ", filePath: "songs/marathi/6.mp3", coverPath: "covers/sixxx.jpg"},
+    {songName: "Adhir Man full song", filePath: "songs/marathi/7.mp3", coverPath: "covers/sevennn.jpg"},
+    {songName: " Nako chandra tare fulanche pasare ", filePath: "songs/marathi/8.mp3", coverPath: "covers/eighttt.jpg"},
+    {songName: "Jagana He Nyara Jhala Ji ", filePath: "songs/marathi/9.mp3", coverPath: "covers/nineee.jpg"},
+    {songName: " Shivba Raja  Sher Shivraj", filePath: "songs/marathi/10.mp3", coverPath: "covers/tennn.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
@@ -67,7 +67,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        audioElement.src = `songs/${songIndex+1}.mp3`;
+        audioElement.src = `songs/marathi/${songIndex+1}.mp3`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
@@ -84,7 +84,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         songIndex += 1;
     }
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `songs/marathi/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -100,7 +100,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     else{
         songIndex -= 1;
     }
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `songs/marathi/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();

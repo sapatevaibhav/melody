@@ -2,7 +2,7 @@
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio('songs/hindi1.mp3');
+let audioElement = new Audio('songs/hindi/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: " Trendz Music", filePath: "songs/hindi1.mp3", coverPath: "covers/onee.jpg"},
-    {songName: " Aankhon Se Batana ", filePath: "songs/hindi2.mp3", coverPath: "covers/twoo.jpg"},
-    {songName: "SunSonio Studio ", filePath: "songs/hindi3.mp3", coverPath: "covers/threee.jpg"},
-    {songName: "Mera Din Bhi Tu", filePath: "songs/hindi4.mp3", coverPath: "covers/fourr.jpg"},
-    {songName: "2018s 50 HIT BOLLYWOOD SONGS", filePath: "songs/hindi5.mp3", coverPath: "covers/fivee.jpg"},
-    {songName: " FEEL THE LOVE  MASHUP", filePath: "songs/hindi6.mp3", coverPath: "covers/sixx.jpg"},
-    {songName: "This 5 Min Makes Your Day ", filePath: "songs/hindi7.mp3", coverPath: "covers/sevenn.jpg"},
-    {songName: "O Saathi", filePath: "songs/hindi8.mp3", coverPath: "covers/eightt.jpg"},
-    {songName: " Ik Supna Full Audio Song", filePath: "songs/9.mp3", coverPath: "covers/ninee.jpg"},
-    {songName: "Tarsati Hai Nigahen", filePath: "songs/hindi10.mp3", coverPath: "covers/tenn.jpg"},
+    {songName: " Trendz Music", filePath: "songs/hindi/1.mp3", coverPath: "covers/onee.jpg"},
+    {songName: " Aankhon Se Batana ", filePath: "songs/hindi/2.mp3", coverPath: "covers/twoo.jpg"},
+    {songName: "SunSonio Studio ", filePath: "songs/hindi/3.mp3", coverPath: "covers/threee.jpg"},
+    {songName: "Mera Din Bhi Tu", filePath: "songs/hindi/4.mp3", coverPath: "covers/fourr.jpg"},
+    {songName: "2018s 50 HIT BOLLYWOOD SONGS", filePath: "songs/hindi/5.mp3", coverPath: "covers/fivee.jpg"},
+    {songName: " FEEL THE LOVE  MASHUP", filePath: "songs/hindi/6.mp3", coverPath: "covers/sixx.jpg"},
+    {songName: "This 5 Min Makes Your Day ", filePath: "songs/hindi/7.mp3", coverPath: "covers/sevenn.jpg"},
+    {songName: "O Saathi", filePath: "songs/hindi/8.mp3", coverPath: "covers/eightt.jpg"},
+    {songName: " Ik Supna Full Audio Song", filePath: "songs/hindi/h9.mp3", coverPath: "covers/ninee.jpg"},
+    {songName: "Tarsati Hai Nigahen", filePath: "songs/hindi/10.mp3", coverPath: "covers/tenn.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
@@ -67,7 +67,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        audioElement.src = `songs/${songIndex+1}.mp3`;
+        audioElement.src = `songs/hindi/${songIndex+1}.mp3`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
@@ -84,7 +84,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         songIndex += 1;
     }
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `songs/hindi/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -100,7 +100,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     else{
         songIndex -= 1;
     }
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `songs/hindi/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
