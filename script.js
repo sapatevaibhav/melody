@@ -16,9 +16,9 @@ let songs = [
     {songName: "BRAIN HEALING SOUNDS", filePath: "songs/4.mp3", coverPath: "covers/four.jpg"},
     {songName: "OM meditation", filePath: "songs/5.mp3", coverPath: "covers/nine.jpg"},
     {songName: "Relaxing Nature Sounds", filePath: "songs/6.mp3", coverPath: "covers/five.jpg"},
-    {songName: "Entspannungsmusik (relaxation)", filePath: "songs/7.mp3", coverPath: "covers/six.jpg"},
+    {songName: "RadhaKrishn  Divine Flute", filePath: "songs/7.mp3", coverPath: "covers/six.jpg"},
     {songName: "Meditation Breath - Music", filePath: "songs/8.mp3", coverPath: "covers/seven.jpg"},
-    {songName: "RIOPY", filePath: "songs/9.mp3", coverPath: "covers/ten.jpg"},
+    {songName: "KishoriManMohan Theme", filePath: "songs/9.mp3", coverPath: "covers/ten.jpg"},
     {songName: "Magic Meditation Music For Deep Sleep", filePath: "songs/10.mp3", coverPath: "covers/eight.jpg"},
 ]
 
