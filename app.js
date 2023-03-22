@@ -61,7 +61,7 @@ login.addEventListener("click", () => {
   if (user == username && pass == password) {
     window.alert("signed in successfully");
 
-    window.location.href = "meditation.html";
+    window.open ("meditation.html");
   } else {
     window.alert("Invalid username or password");
   }
