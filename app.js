@@ -39,14 +39,12 @@ login.addEventListener("click", () => {
   var user = document.getElementById("username").value;
   var pass = document.getElementById("password").value;
 
-  username = localStorage.getItem(user);
-  password = localStorage.getItem(pass);
-  if (user == username && pass == password) {
+  // username = localStorage.getItem(user);
+  password = localStorage.getItem(user);
+  if (pass == password) {
     window.alert("signed in successfully");
-
     window.open("meditation.html");
   } else {
     window.alert("Invalid username or password");
   }
-
 });
