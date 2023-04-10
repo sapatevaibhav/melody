@@ -19,49 +19,32 @@ register.addEventListener("click", () => {
 
   if (username.length != 0) {
     if (password.length != 0) {
-      var date = new Date();
-      date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
-
-      document.cookie = "username=" + username + "; expires=" + date.toUTCString();
-      document.cookie = "password=" + password + "; expires=" + date.toUTCString();
-
-      window.alert("Success! now you can login");
+      localStorage.setItem(username, password);
       container.classList.remove("sign-up-mode");
     }
-    else {
-      window.alert("password cannot be empty");
-    }
+    //   else {
+    //     const element = document.querySelector(".input-field");
+    //     element.style.borderColor = "red";
+    //   }
+    // } else {
+    //   const element1 = document.querySelector(".input-field");
+    //   element1.style.borderColor = "red";
+
+    // }
   }
-  else {
-    window.alert("username cannot be empty");
-  }
-});
+}
+);
 
 login.addEventListener("click", () => {
   var user = document.getElementById("username").value;
   var pass = document.getElementById("password").value;
-  var cookieString = document.cookie;
-  var cookies = cookieString.split("; ");
-  var username = null;
-  var password = null;
 
-  for (var i = 0; i < cookies.length; i++) {
-    var cookie = cookies[i];
-    var parts = cookie.split("=");
-
-    if (parts[0] === "username") {
-      username = decodeURIComponent(parts[1]);
-    }
-
-    if (parts[0] === "password") {
-      password = decodeURIComponent(parts[1]);
-    }
-  }
-
+  username = localStorage.getItem(user);
+  password = localStorage.getItem(pass);
   if (user == username && pass == password) {
     window.alert("signed in successfully");
 
-    window.open ("meditation.html");
+    window.open("meditation.html");
   } else {
     window.alert("Invalid username or password");
   }
