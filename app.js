@@ -22,15 +22,6 @@ register.addEventListener("click", () => {
       localStorage.setItem(username, password);
       container.classList.remove("sign-up-mode");
     }
-    //   else {
-    //     const element = document.querySelector(".input-field");
-    //     element.style.borderColor = "red";
-    //   }
-    // } else {
-    //   const element1 = document.querySelector(".input-field");
-    //   element1.style.borderColor = "red";
-
-    // }
   }
 }
 );

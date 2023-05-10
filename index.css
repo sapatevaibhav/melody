@@ -136,10 +136,10 @@ form.sign-in-form {
   transition: 0.3s;
 }
 
-.social-icon:hover {
+/* .social-icon:hover {
   color: #F6931C;
   border-color: #F6931C;
-}
+} */
 
 .btn {
   width: 150px;
